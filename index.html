@@ -143,11 +143,19 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
+<<<<<<< HEAD
   <body>
     <dialog class="popup" open>
       <p>Install App?</p>
       <button>Cancel</button>
       <button>Install</button>
+=======
+<body>
+    <dialog class="popup" id="install-popup">
+        <p>Install App?</p>
+        <button class="cancel-button">Cancel</button>
+        <button class="proceed-button">Install</button>
+>>>>>>> f16f815 (added local api)
     </dialog>
     <header class="navbar">
       <p>
@@ -155,35 +163,8 @@
       </p>
     </header>
     <section class="card-container">
-      <div class="card-1 card">
-        <div
-          class="card-image"
-          style="
-            background: white url('./image.jpeg') no-repeat center;
-            background-size: cover;
-          "
-        >
-          <div class="card-tag">News 18</div>
-        </div>
-        <div class="card-content">
-          <div class="card-headline">
-            Afghanistan News LIVE Updates: Taliban Co-founder Abdul Baradar in
-            Kabul for Talks on Govt Formation; IAF P - News18
-          </div>
-          <div class="card-description">
-            Afghanistan News LIVE Updates: Taliban leader Abdul Ghani Baradar,
-            Sirajuddin Haqqani of the Haqqani Network and 133 other leaders of
-            the insurgent group may soon be out of UN's list of 1988 Sanctions
-            Committee.
-          </div>
-        </div>
-      </div>
-      <div class="card-2 card">Two</div>
-      <div class="card-3 card">Three</div>
-      <div class="card-4 card">Four</div>
-      <div class="card-5 card">Five</div>
     </section>
     <script src="./api.js" defer></script>
-    <!-- <script src="./pwa.js" defer></script> -->
-  </body>
+    <script src="./pwa.js" defer></script>
+</body>
 </html>
