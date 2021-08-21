@@ -1,70 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="refresh" content="3600;url=index.html"> -->
-    <link rel="icon" type="image/png" sizes="196x196" href="favicon-196.png">
-    <link rel="apple-touch-icon" href="apple-icon-180.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2048-2732.jpeg" media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2732-2048.jpeg" media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1668-2388.jpeg" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2388-1668.jpeg" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1536-2048.jpeg" media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2048-1536.jpeg" media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1668-2224.jpeg" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2224-1668.jpeg" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1620-2160.jpeg" media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2160-1620.jpeg" media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1284-2778.jpeg" media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2778-1284.jpeg" media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1170-2532.jpeg" media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2532-1170.jpeg" media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1125-2436.jpeg" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2436-1125.jpeg" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1242-2688.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2688-1242.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-828-1792.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1792-828.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1242-2208.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-2208-1242.jpeg" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-750-1334.jpeg" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1334-750.jpeg" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-640-1136.jpeg" media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="../../assets/apple-splash-dark-1136-640.jpeg" media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicon-196.png" />
+    <link rel="apple-touch-icon" href="apple-icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2048-2732.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2732-2048.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1668-2388.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2388-1668.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1536-2048.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2048-1536.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1668-2224.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2224-1668.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1620-2160.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2160-1620.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1284-2778.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2778-1284.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1170-2532.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2532-1170.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1125-2436.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2436-1125.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1242-2688.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2688-1242.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-828-1792.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1792-828.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1242-2208.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-2208-1242.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-750-1334.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1334-750.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-640-1136.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="../../assets/apple-splash-dark-1136-640.jpeg"
+      media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
     <title>Instant News</title>
-    <link rel="manifest" href="./manifest.json">
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <dialog class="popup" open>
-        <p>Install App?</p>
-        <button>Cancel</button>
-        <button>Install</button>
+      <p>Install App?</p>
+      <button>Cancel</button>
+      <button>Install</button>
     </dialog>
     <header class="navbar">
-        <p><span><em>instant</em></span> news</p>
+      <p>
+        <span><em>instant</em></span> news
+      </p>
     </header>
     <section class="card-container">
-        <div class="card-1 card">
-            <div class="card-image" style="background: white url('./image.jpeg') no-repeat center;background-size: cover;">
-                <div class="card-tag">News 18</div>
-            </div>
-            <div class="card-content">
-                <div class="card-headline">Afghanistan News LIVE Updates: Taliban Co-founder Abdul Baradar in Kabul for Talks on Govt Formation; IAF P - News18</div>
-                <div class="card-description">Afghanistan News LIVE Updates: Taliban leader Abdul Ghani Baradar, Sirajuddin Haqqani of the Haqqani Network and 133 other leaders of the insurgent group may soon be out of UN's list of 1988 Sanctions Committee.</div>
-            </div>
+      <div class="card-1 card">
+        <div
+          class="card-image"
+          style="
+            background: white url('./image.jpeg') no-repeat center;
+            background-size: cover;
+          "
+        >
+          <div class="card-tag">News 18</div>
         </div>
-        <div class="card-2 card">Two</div>
-        <div class="card-3 card">Three</div>
-        <div class="card-4 card">Four</div>
-        <div class="card-5 card">Five</div>
+        <div class="card-content">
+          <div class="card-headline">
+            Afghanistan News LIVE Updates: Taliban Co-founder Abdul Baradar in
+            Kabul for Talks on Govt Formation; IAF P - News18
+          </div>
+          <div class="card-description">
+            Afghanistan News LIVE Updates: Taliban leader Abdul Ghani Baradar,
+            Sirajuddin Haqqani of the Haqqani Network and 133 other leaders of
+            the insurgent group may soon be out of UN's list of 1988 Sanctions
+            Committee.
+          </div>
+        </div>
+      </div>
+      <div class="card-2 card">Two</div>
+      <div class="card-3 card">Three</div>
+      <div class="card-4 card">Four</div>
+      <div class="card-5 card">Five</div>
     </section>
     <script src="./api.js" defer></script>
     <!-- <script src="./pwa.js" defer></script> -->
-</body>
+  </body>
 </html>
