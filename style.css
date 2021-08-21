@@ -122,3 +122,21 @@
   display: flex;
   flex-direction: column;
 }
+.card-headline {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-weight: 600;
+  flex-grow: 0;
+  overflow: auto;
+  margin-bottom: 4%;
+}
+.card-description {
+  font-size: clamp(0.9rem, 2.5vw, 1.7rem);
+  font-weight: 400;
+  flex-grow: 1;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 60vw;
+  }
+}
