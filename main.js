@@ -1,4 +1,3 @@
-
 // let cardContainer = document.querySelector(".card-container");
 // cardContainer.addEventListener("scroll", (e) => {
 //     // console.log(e.target.scrollHeight);
@@ -17,7 +16,7 @@
 //             console.log(`Card ${index} found`)
 //         }
 //         // let blur = percent*2;
-//         // card.style.filter = `blur(${blur}px) opacity(${150 - percent*100}%)`;    
+//         // card.style.filter = `blur(${blur}px) opacity(${150 - percent*100}%)`;
 //     })
 //     // card1.style.filter = `blur(${blur}px) opacity(${150 - percent*100}%)`;
 //     // console.log(card1.clientWidth)
