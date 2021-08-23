@@ -147,7 +147,7 @@
   .card-image {
     height: 100%;
     width: 45%;
-    flex:none;
+    flex: none;
     border-radius: 16px 0 0 16px;
   }
   .card-content {

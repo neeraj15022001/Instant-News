@@ -27,8 +27,8 @@ function stopWorker() {
   w = undefined;
 }
 
-function addElement(title, description, url="", source) {
-    let element = `
+function addElement(title, description, url = "", source) {
+  let element = `
     <div class="card">
           <div class="card-image" style="background: lightgray url('${url}') no-repeat center;background-size: cover;">
               <div class="card-tag">${source}</div>
