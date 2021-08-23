@@ -41,4 +41,10 @@ self.addEventListener("push", (event) => {
 // Pre Caching resources
 
 const cacheName = "cache-v1";
-const resourcesToPrecache = ["/", "/index.html", "/style.min.css", "/pwa.min.js", "/sw.js"];
+const resourcesToPrecache = [
+  "/",
+  "/index.html",
+  "/style.min.css",
+  "/pwa.min.js",
+  "/sw.js",
+];
