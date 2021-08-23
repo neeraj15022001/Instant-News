@@ -123,14 +123,14 @@
   flex-direction: column;
 }
 .card-headline {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
   font-weight: 600;
   flex-grow: 0;
   overflow: auto;
   margin-bottom: 4%;
 }
 .card-description {
-  font-size: clamp(0.9rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
   font-weight: 400;
   flex-grow: 1;
   overflow: auto;

@@ -140,7 +140,8 @@
     />
     <title>Instant News</title>
     <link rel="manifest" href="./manifest.json" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.min.css" />
+    <link rel="stylesheet" href="./animate.min.css">
   </head>
 
   <body>
@@ -150,12 +151,14 @@
       <button class="proceed-button">Install</button>
     </dialog>
     <header class="navbar">
-      <p>
+      <p class="animate__animated animate__lightSpeedInLeft">
         <span><em>instant</em></span> news
       </p>
+      <i></i>
     </header>
     <section class="card-container"></section>
-    <script src="./api.js" defer></script>
-    <script src="./pwa.js" defer></script>
+    <script src="./api.min.js" defer></script>
+    <script src="./threading.min.js" defer></script>
+    <script src="./pwa.min.js" defer></script>
   </body>
 </html>

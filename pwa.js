@@ -6,8 +6,8 @@ if ("serviceWorker" in navigator) {
       .catch((err) => console.log("Registeration Failed", err));
   });
 }
-
-let deferredPrompt;
+startWorker();
+// let deferredPrompt;
 // window.addEventListener("beforeinstallprompt", (e) => {
 //   // Prevent old bowsers to trigger prompt before waiting for this event
 //   // here we are triggering installing prompt using button and preventing it from opening itself on some browsers
