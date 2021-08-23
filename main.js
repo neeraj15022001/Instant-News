@@ -10,29 +10,29 @@ cardContainer.addEventListener("scroll", (e) => {
   console.log(scrolled, clientHeight, cardNumber, percent);
   let cards = document.querySelectorAll(".card");
   let prevCard = cards[cardNumber - 1];
-  if(cardNumber > 0) {
+  if (cardNumber > 0) {
     let scaledValue = 1;
     if (oldValue < scrolled) {
-        console.log("Up", scaledValue);
-        if(scaledValue > 0.9) {
-            scaledValue -= 0.10;
-            prevCard.style.transform = `scale(${scaledValue})`;
-            prevCard.style.opacity = 1 - percent;
-        }
-        if(percent > 0.95 && percent < 1) {
-            prevCard.style.visibility = "hidden";
-        }
-      } else if (oldValue > scrolled) {
-        console.log("Down", scaledValue);
-        scaledValue = 0.9
-        prevCard.style.visibility = "visible";
-        if(scaledValue < 1) {
-            scaledValue += 0.10;
-            prevCard.style.transform = `scale(${scaledValue})`;
-            prevCard.style.opacity = percent + 1;
-        }
+      console.log("Up", scaledValue);
+      if (scaledValue > 0.9) {
+        scaledValue -= 0.1;
+        prevCard.style.transform = `scale(${scaledValue})`;
+        prevCard.style.opacity = 1 - percent;
       }
-      oldValue = scrolled;
+      if (percent > 0.95 && percent < 1) {
+        prevCard.style.visibility = "hidden";
+      }
+    } else if (oldValue > scrolled) {
+      console.log("Down", scaledValue);
+      scaledValue = 0.9;
+      prevCard.style.visibility = "visible";
+      if (scaledValue < 1) {
+        scaledValue += 0.1;
+        prevCard.style.transform = `scale(${scaledValue})`;
+        prevCard.style.opacity = percent + 1;
+      }
+    }
+    oldValue = scrolled;
   }
-//   console.log(percent);
+  //   console.log(percent);
 });
