@@ -1,27 +1,38 @@
-// let cardContainer = document.querySelector(".card-container");
-// cardContainer.addEventListener("scroll", (e) => {
-//     // console.log(e.target.scrollHeight);
-//     let scrolled = e.target.scrollTop;
-//     let clientHeight = e.target.clientHeight;
-//     // console.log(scrolled);
-//     // console.log(clientHeight);
-//     let extra = 70;
-//     let percent = (scrolled/clientHeight);
-//     let cards = document.querySelectorAll(".card");
-//     percent = (percent/Math.ceil(percent)).toFixed(2)
-//     // console.log(percent)
-//     cards.forEach((card,index) => {
-//         console.log(index + " " + card.offsetTop)
-//         if(card.offsetTop == ((card.offsetTop)*index)) {
-//             console.log(`Card ${index} found`)
-//         }
-//         // let blur = percent*2;
-//         // card.style.filter = `blur(${blur}px) opacity(${150 - percent*100}%)`;
-//     })
-//     // card1.style.filter = `blur(${blur}px) opacity(${150 - percent*100}%)`;
-//     // console.log(card1.clientWidth)
-//     // card1.clientWidth -= (percent * 2);
-//     // console.log(card1.clientWidth)
-//     // card1.style.transform = `translateY(-${percent*10}px)`
-//     // console.log(percent.toFixed(2))
-// })
+let cardContainer = document.querySelector(".card-container");
+let oldValue = 0;
+cardContainer.addEventListener("scroll", (e) => {
+  let scrolled = e.target.scrollTop;
+  let clientHeight = e.target.clientHeight;
+  let extra = 70;
+  let percent = scrolled / clientHeight;
+  let cardNumber = Math.ceil(percent);
+  percent = parseFloat((percent / Math.ceil(percent)).toFixed(2));
+  console.log(scrolled, clientHeight, cardNumber, percent);
+  let cards = document.querySelectorAll(".card");
+  let prevCard = cards[cardNumber - 1];
+  if(cardNumber > 0) {
+    let scaledValue = 1;
+    if (oldValue < scrolled) {
+        console.log("Up", scaledValue);
+        if(scaledValue > 0.9) {
+            scaledValue -= 0.10;
+            prevCard.style.transform = `scale(${scaledValue})`;
+            prevCard.style.opacity = 1 - percent;
+        }
+        if(percent > 0.95 && percent < 1) {
+            prevCard.style.visibility = "hidden";
+        }
+      } else if (oldValue > scrolled) {
+        console.log("Down", scaledValue);
+        scaledValue = 0.9
+        prevCard.style.visibility = "visible";
+        if(scaledValue < 1) {
+            scaledValue += 0.10;
+            prevCard.style.transform = `scale(${scaledValue})`;
+            prevCard.style.opacity = percent + 1;
+        }
+      }
+      oldValue = scrolled;
+  }
+//   console.log(percent);
+});

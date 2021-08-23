@@ -91,6 +91,7 @@
   position: sticky;
   top: 13vh;
   will-change: auto;
+  transition: 0.3s ease-in-out;
 }
 .card-image {
   height: 38%;
@@ -154,4 +155,16 @@
     height: 100%;
     padding: 2rem;
   }
+  .card-headline {
+    flex-grow:0;
+    height: auto;
+    overflow: hidden;
+  }
+  .card-description {
+    height: auto;
+    flex-grow: 0;
+    overflow: hidden;
+  }
 }
+
+

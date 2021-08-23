@@ -6,7 +6,7 @@ var requestOptions = {
 fetch("./localapi.json", requestOptions)
   .then((response) => response.json())
   .then((result) => {
-    console.log(result);
+    // console.log(result);
     if (result.status == "ok") {
       const articles = result.articles;
       articles
@@ -18,8 +18,7 @@ fetch("./localapi.json", requestOptions)
           //   const source = article.source.name;
           //   addElement(title, description, url, source);
         })
-        .then(() => stopWorker());
-      // stopWorker();
+        // setTimeout(() => stopWorker(), 5000);
     }
   })
   .catch((error) => console.log("error", error));

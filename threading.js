@@ -4,7 +4,7 @@ var w;
 function startWorker() {
   if (typeof Worker !== "undefined") {
     if (typeof w == "undefined") {
-      w = new Worker("api.min.js");
+      w = new Worker("api.js");
     }
     w.onmessage = function (event) {
       //   console.log("in on message")
