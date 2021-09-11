@@ -9,8 +9,8 @@ fetch("./localapi.json", requestOptions)
     // console.log(result);
     if (result.status == "ok") {
       const articles = result.articles;
-      for(let i = 0; i < 8; i++) {
-        postMessage(articles[i])
+      for (let i = 0; i < 8; i++) {
+        postMessage(articles[i]);
       }
       // articles.forEach((article, index) => {
       //   postMessage(article);
